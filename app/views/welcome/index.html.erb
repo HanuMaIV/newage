@@ -8,10 +8,10 @@ na_profession = na_professions.sample
 pic_num = (1..40).to_a.sample
 %>
 <div id="wrapper">
-  <h1>Your New Age Name is......</h1>
-  <p><%= "#{na_name} the #{na_title} of #{na_profession}" %></p>
-  <a href="https://evening-cove-1152.herokuapp.com/">Try Your Luck and Reincarnate By Clicking Here</a>
-  <div class="image">
+  <h1 class="center">Your New Age Name is......</h1>
+  <p class="center"><%= "#{na_name} the #{na_title} of #{na_profession}" %></p>
+  <a class="center" href="https://evening-cove-1152.herokuapp.com/">Try Your Luck and Reincarnate By Clicking Here</a>
+  <div class="image center">
   <%= link_to(image_tag("http://198.20.70.218/~musictra/new_age/newage#{pic_num}.jpg", :alt => "new age person #{pic_num}" )) %>
   </div>
 </div>
